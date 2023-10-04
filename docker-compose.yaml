@@ -1,0 +1,11 @@
+version: '3'
+services:
+  traffic-data:
+    image: jiaweilu/cosmos-traffic-data:0.0.1-SNAPSHOT
+    ports:
+      - "8000:8000"
+    networks:
+      - traffic-network
+
+networks:
+  traffic-network:
